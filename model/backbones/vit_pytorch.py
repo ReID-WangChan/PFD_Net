@@ -18,7 +18,8 @@ from itertools import repeat
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch._six import container_abcs
+# from torch._six import container_abcs
+from collections import abc as container_abcs
 
 
 def _ntuple(n):

@@ -1,5 +1,5 @@
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 import torch
 print('num_gpu:', torch.cuda.device_count())
 
@@ -39,7 +39,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description="Sketenton-ReID Baseline Training")
     parser.add_argument(
-        "--config_file", default="/home/wangt/pfd_net/configs/OCC_Duke/skeleton_transreid.yml", help="path to config file", type=str
+        "--config_file", default="configs/OCC_Duke/skeleton_transreid.yml", help="path to config file", type=str
     )
 
     parser.add_argument("opts", help="Modify config options using the command-line", default=None,

@@ -1,6 +1,6 @@
 MODEL:
   PRETRAIN_CHOICE: 'imagenet'
-  PRETRAIN_PATH: '/home/wangt/.cache/torch/checkpoints/jx_vit_base_p16_224-80ecf9dd.pth'
+  PRETRAIN_PATH: 'weights/jx_vit_base_p16_224-80ecf9dd.pth'
   METRIC_LOSS_TYPE: 'triplet'
   # IF_LABELSMOOTH: 'off'
   IF_LABELSMOOTH: 'on'
@@ -23,7 +23,7 @@ MODEL:
   DROP_FIRST: False
   NUM_DECODER_LAYER: 6
   QUERY_NUM: 17
-  POSE_WEIGHT: '/home/wangt/pfd_net/weights/pose_hrnet_w48_384x288.pth'
+  POSE_WEIGHT: 'weights/pose_hrnet_w48_384x288.pth'
   SKT_THRES: 0.3
   
 INPUT:
@@ -37,7 +37,7 @@ INPUT:
 
 DATASETS:
   NAMES: ('dukemtmc')
-  ROOT_DIR: ('/home/wangt/pfd_net/data/')
+  ROOT_DIR: ('data/')
 
 DATALOADER:
   SAMPLER: 'softmax_triplet'

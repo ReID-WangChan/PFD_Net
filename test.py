@@ -16,8 +16,8 @@ from utils.logger import setup_logger
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="ReID Baseline Training")
     parser.add_argument(
-        "--config_file", default="/home/wangt/pfd_master/configs/OCC_Duke/skeleton_pfd.yml", help="path to config file", type=str
-    )#"" /home/wangt/pfd_net/configs/OCC_Duke/skeleton_transreid.yml
+        "--config_file", default="configs/OCC_Duke/skeleton_pfd.yml", help="path to config file", type=str
+    )#"" configs/OCC_Duke/skeleton_transreid.yml
     parser.add_argument("opts", help="Modify config options using the command-line", default=None,
                         nargs=argparse.REMAINDER)
 

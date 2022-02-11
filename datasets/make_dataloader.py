@@ -11,7 +11,7 @@ from .msmt17 import MSMT17
 from .sampler_ddp import RandomIdentitySampler_DDP
 import torch.distributed as dist
 from .occ_duke import OCC_DukeMTMCreID
-from .occ_reid import Occluded_REID
+# from .occ_reid import Occluded_REID
 
 #
 import numpy as np
@@ -22,7 +22,7 @@ __factory = {
     'dukemtmc': DukeMTMCreID,
     'msmt17': MSMT17,
     'occ_duke': OCC_DukeMTMCreID,
-    'occ_reid': Occluded_REID,
+    # 'occ_reid': Occluded_REID,
 }
 
 # def set_seed(seed):
